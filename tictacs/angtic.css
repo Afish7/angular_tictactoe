@@ -1,0 +1,53 @@
+
+h1 
+{	text-align: center;
+	padding-top: 15px;
+	font-family: 'Margarine', arial;
+	color: #f9f9f9;
+	width: 100%;
+	font-size: 45px;
+	height:70px;
+	background-color:rgba(169, 157, 250, 0.4);
+}
+
+
+.content {
+	margin: 0 auto;
+}
+body {
+	background-image: url('http://hdw.datawallpaper.com/space/starry-sky-314160.jpg');
+	margin:0px;
+}
+.board {
+	margin: 20px auto;
+	width: 320px;
+	color: #f9f9f9;
+}
+.cell {	
+		float:left;
+		width:100px;
+		height: 100px;
+		margin: 3px;
+		line-height: 100px;
+		font-size: 40px;
+		vertical-align: middle;
+		text-align: center;
+		background: rgba(238,233,233,0.1);
+		font-family: 'Audiowide', Arial;
+	}
+.clear {
+		clear:both;
+	}
+
+
+.cell:hover {
+    background: rgba(192,192,192, 0.7);
+}
+
+.cell:active {
+    background: rgba(255,255,255,0.3);
+}
+
+
+
+
