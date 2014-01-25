@@ -8,6 +8,7 @@ h1
 	font-size: 45px;
 	height:70px;
 	background-color:rgba(169, 157, 250, 0.4);
+	margin-top:-10px;
 }
 
 
@@ -17,6 +18,10 @@ h1
 body {
 	background-image: url('http://hdw.datawallpaper.com/space/starry-sky-314160.jpg');
 	margin:0px;
+	-webkit-user-select: none;  
+	-moz-user-select: none;    
+	-ms-user-select: none;      
+	user-select: none;
 }
 .board {
 	margin: 20px auto;

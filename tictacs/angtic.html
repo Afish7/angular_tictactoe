@@ -1,28 +1,29 @@
-<DDOCTYPE! html>
+<DOCTYPE! html>
 <html>
 <head>
 	<link href='http://fonts.googleapis.com/css?family=Margarine' rel='stylesheet' type='text/css'>
 	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" type="text/css" href="angtic.css">
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
-
+<script type="text/javascript" src="main.js"></script>
 </head>
 
 <body>
 	<h1>Tic Tac Toe</h1>
+
 <div class= "board">
 
-<div x-ng-app="" x-ng-init ="cells=['','','','','','','','','']; xTurn = {val:true};">
-	
+	<div x-ng-app="" x-ng-controller="boardCtrl">
+		
 
-	<div class="cell" x-ng-repeat="c in cells track by $index"
-	x-ng-class="{cell:true,clear: $index % 3 == 0 }"
-	x-ng-click="cells[$index]= (cells[$index] == '' ? ((xTurn.val = !xTurn.val) ? 'X' : 'O'): cells[$index]);" 
-	>{{c}}
+		<div class="cell" x-ng-repeat="c in boxes track by $index"
+		x-ng-class="{cell:true,clear: $index % 3 == 0 }"
+		x-ng-click="takeTurn($index)">{{boxes[$index]}}
 
-</div>
 
-</div>
+		</div>
+		<h3 x-ng-click="reset()"> <a>RESET</a> </h3>															
+	</div>
 </div>
 
 </body>
